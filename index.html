@@ -18,18 +18,36 @@
     <label for="terminal">제 1여객터미널</label>
     <input id="terminal" type="radio" name="ter" value="T2"/>
     <label for="terminal">제 2여객터미널</label>
-    <br/>
+    <br />
     <lable for="arrival">출발 공항</lable>
     <input id="arrival" type="text" placeholder="출발한 공항을 입력하세요" required />
     <button type="submit">✈️</button>
     </form>
-
+    <hr />
     <form aria-label="입국장 정보 입력 결과" action="" method="GET">
         <table>
+            <thead>
             <tr>
-                <th>테이블 헤더</th>
-                <td>테이블 데이터</td>
+                <th sccope="row">도착 터미널</th>
+                <th sccope="row">입국장 게이트</th>
+                <th sccope="row">출발 공항</th>
+                <th sccope="row">항공편명</th>
+                <th sccope="row">도착 예정 시간</th>
+                <th sccope="row">외국인 인원</th>
+                <th sccope="row">내국인 인원</th>
             </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>도착 터미널</td>
+                    <td>입국장 게이트</td>
+                    <td>출발 공항</td>
+                    <td>항공편명</td>
+                    <td>도착 예정 시간</td>
+                    <td>외국인 인원</td>
+                    <td>내국인 인원</td>
+                </tr>
+            </tbody>
         </table>        
     </form>       
 </body>
