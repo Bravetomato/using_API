@@ -9,14 +9,28 @@
 </head>
 <body>
     <h1>인천공항 입국장 정보 모음</h1>
+
     <span>현재 날짜</span>
     <span>현재 시간</span>
-    <form aria-label="입국장 검색입력">
-    <lable fot="terminal">터미널</lable>
-    <input id="terminal" type="number" palceholder="숫자를 입력하세요"/>
-    <lable for="arrival">대기인원</lable>
-    <input id="arrival" type="text" placeholder="입국장을 입력하세요" />
-    <button type="button">✈️</button>
+
+    <form aria-label="입국장 정보 입력" action="" method="GET">
+    <input id="terminal" type="radio" name="ter" value="T1"/>
+    <label for="terminal">제 1여객터미널</label>
+    <input id="terminal" type="radio" name="ter" value="T2"/>
+    <label for="terminal">제 2여객터미널</label>
+    <br/>
+    <lable for="arrival">출발 공항</lable>
+    <input id="arrival" type="text" placeholder="출발한 공항을 입력하세요" required />
+    <button type="submit">✈️</button>
     </form>
+
+    <form aria-label="입국장 정보 입력 결과" action="" method="GET">
+        <table>
+            <tr>
+                <th>테이블 헤더</th>
+                <td>테이블 데이터</td>
+            </tr>
+        </table>        
+    </form>       
 </body>
 </html>
